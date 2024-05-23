@@ -7,6 +7,7 @@ The data to be stored in a Bitcoin transaction’s OP_RETURN output is typically
 Transaction Structure:
 A Bitcoin transaction that includes Runes will have an OP_RETURN output.
 The structure of this output is as follows:
+
 6a: This is the hexadecimal representation of the OP_RETURN opcode.
 Length of the data: The length of the data in bytes.
 The actual Runes data: The data itself, encoded in hexadecimal format.
