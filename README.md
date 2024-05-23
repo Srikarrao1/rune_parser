@@ -18,13 +18,19 @@ Here’s a step-by-step example:
 Prepare the Data:
 
 Convert your data to hexadecimal format.
+
 Example data: "Hello, Runes!"
+
 Hexadecimal representation: 48656c6c6f2c2052756e657321
+
 Construct the OP_RETURN Output:
 
 6a: OP_RETURN opcode in hexadecimal.
+
 13: Length of the data in hexadecimal (19 bytes for "Hello, Runes!").
+
 48656c6c6f2c2052756e657321: The actual data in hexadecimal.
+
 The complete OP_RETURN output for this data would be:
 
 6a1348656c6c6f2c2052756e657321
