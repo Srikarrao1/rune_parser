@@ -1,19 +1,17 @@
-# rune_parser
-
-Runes in Bitcoin Transactions
 Runes are a form of data that can be embedded in Bitcoin transactions using the OP_RETURN script opcode. This opcode allows storing up to 80 bytes of arbitrary data in the blockchain. The stored data is immutable and can be easily retrieved from the blockchain.
 
 Encoding Runes
 Hexadecimal Encoding:
-
 The data to be stored in a Bitcoin transaction’s OP_RETURN output is typically encoded in hexadecimal format.
-Transaction Structure:
 
+Transaction Structure:
 A Bitcoin transaction that includes Runes will have an OP_RETURN output.
 The structure of this output is as follows:
 6a: This is the hexadecimal representation of the OP_RETURN opcode.
 Length of the data: The length of the data in bytes.
 The actual Runes data: The data itself, encoded in hexadecimal format.
+
+
 Here’s a step-by-step example:
 
 Prepare the Data:
@@ -28,13 +26,11 @@ Construct the OP_RETURN Output:
 48656c6c6f2c2052756e657321: The actual data in hexadecimal.
 The complete OP_RETURN output for this data would be:
 
-Copy code
 6a1348656c6c6f2c2052756e657321
+
 Decoding Runes
 To decode a Runes transaction, follow these steps:
-
 Extract the OP_RETURN Data:
-
 Retrieve the transaction and identify the OP_RETURN output.
 Decode the Hexadecimal Data:
 
