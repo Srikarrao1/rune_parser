@@ -36,6 +36,7 @@ The complete OP_RETURN output for this data would be:
 6a1348656c6c6f2c2052756e657321
 
 Decoding Runes
+
 To decode a Runes transaction, follow these steps:
 Extract the OP_RETURN Data:
 Retrieve the transaction and identify the OP_RETURN output.
